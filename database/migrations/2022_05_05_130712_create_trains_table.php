@@ -22,7 +22,7 @@ class CreateTrainsTable extends Migration
             $table->dateTime('arrival_time', 0);
             $table->smallInteger('train_code');
             $table->tinyInteger('cart_number')->nullable();
-            $table->boolean('is_in_time')->default(0);
+            $table->boolean('is_in_time')->default(1);
             $table->boolean('is_cancelled')->default(0);
         });
     }
