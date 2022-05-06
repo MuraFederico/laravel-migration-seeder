@@ -9,10 +9,10 @@
 </head>
 <body>
 
-    <h1>Today Trains</h1>
+    <h1>Trains</h1>
 
 
-    @foreach ($today_trains as $train)
+    @foreach ($trains as $train)
         <div class="train">
             <p>{{ $train->company }}</p>
             <p>{{ $train->train_code }}</p>
@@ -23,5 +23,6 @@
 
         </div>
     @endforeach
+    {{ $trains->links() }}
 </body>
 </html>
